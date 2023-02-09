@@ -1,20 +1,10 @@
+import NavBar from './components/NavBar';
+
 export default function Home() {
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
       <main className="bg-white max-w-screen-2xl m-auto">
-        {/* NAVBAR */}
-        <nav className="bg-white p-2 flex justify-between">
-          <a href="" className="text-gray-700 text-2xl font-bold">OpenTable</a>
-          <div>
-            <div className="flex">
-              <button className="p-1 px-4 border rounded bg-blue-400 text-white mr-3">
-                Sign in
-              </button>
-              <button className="p-1 px-4 border rounded">Sign up</button>
-            </div>
-          </div>
-        </nav>
-        {/* NAVBAR */}
+        <NavBar />
         <main>
           {/* HEADER */}
           <div className="h-64 p-2 bg-gradient-to-r from-[#0f1f47] to-[#5f6984]">
