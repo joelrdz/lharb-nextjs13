@@ -1,24 +1,12 @@
 import NavBar from '../components/NavBar';
+import Header from './components/Header';
 
 export default function Search() {
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
       <main className="max-w-screen-2xl m-auto bg-white">
         <NavBar />
-        {/* HEADER */}
-        <div className="bg-gradient-to-r from-[#0f1f47] to-[#5f6984] p-2">
-          {/* SEARCH BAR */}
-          <div className="flex justify-center m-auto text-left text-lg py-3">
-            <input
-              type="text"
-              className="w-[450px] mr-3 p-2 rounded"
-              placeholder="State, city or town"
-            />
-            <button className="bg-red-600 text-white px-9 py-2 rounded">Let's go</button>
-          </div>
-          {/* SEARCH BAR */}
-        </div>
-        {/* HEADER */}
+        <Header />
         <div className="flex py-4 m-auto w-2/3 justify-between items-start">
           {/* SEARCH SIDE BAR */}
           <div className="w-1/5">
