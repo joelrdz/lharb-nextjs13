@@ -1,0 +1,88 @@
+export default function Search() {
+  return (
+    <main className="bg-gray-100 min-h-screen w-screen">
+      <main className="max-w-screen-2xl m-auto bg-white">
+        {/* NAVBAR */}
+        <nav className="bg-white p-2 flex justify-between">
+          <a href="" className="font-bold text-gray-700 text-2xl">OpenTable</a>
+          <div>
+            <div className="flex">
+              <button className="border p-1 px-4 rounded bg-blue-400 text-white mr-3">
+                Sign in
+              </button>
+              <button className="border p-1 px-4 rounded">Sign up</button>
+            </div>
+          </div>
+        </nav>
+        {/* NAVBAR */}
+        {/* HEADER */}
+        <div className="bg-gradient-to-r from-[#0f1f47] to-[#5f6984] p-2">
+          {/* SEARCH BAR */}
+          <div className="flex justify-center m-auto text-left text-lg py-3">
+            <input
+              type="text"
+              className="w-[450px] mr-3 p-2 rounded"
+              placeholder="State, city or town"
+            />
+            <button className="bg-red-600 text-white px-9 py-2 rounded">Let's go</button>
+          </div>
+          {/* SEARCH BAR */}
+        </div>
+        {/* HEADER */}
+        <div className="flex py-4 m-auto w-2/3 justify-between items-start">
+          {/* SEARCH SIDE BAR */}
+          <div className="w-1/5">
+            <div className="border-b pb-4">
+              <h1 className="mb-2">Region</h1>
+              <p className="font-light text-reg">Toronto</p>
+              <p className="font-light text-reg">Ottawa</p>
+              <p className="font-light text-reg">Montreal</p>
+              <p className="font-light text-reg">Hamilton</p>
+              <p className="font-light text-reg">Kingston</p>
+              <p className="font-light text-reg">Niagara</p>
+            </div>
+            <div className="border-b pb-4 mt-3">
+              <h1 className="mb-2">Cuisine</h1>
+              <p className="font-light text-reg">Mexican</p>
+              <p className="font-light text-reg">Italian</p>
+              <p className="font-light text-reg">Chinese</p>
+            </div>
+            <div className="mt-3 pb-4">
+              <h1 className="mb-2">Price</h1>
+              <div className="flex">
+                <button className="w-full text-reg font-light p-2 border rounded-l">$</button>
+                <button className="w-full text-reg font-light p-2 border-y border-r">$$</button>
+                <button className="w-full text-reg font-light p-2 border-y border-r rounded-r">$$$</button>
+              </div>
+            </div>
+          </div>
+          {/* SEARCH SIDE BAR */}
+          <div className="w-5/6">
+            {/* RESTAURANT CARD */}
+            <div className="border-b flex pb-5">
+              <img src="https://images.otstatic.com/prod1/49153814/2/medium.jpg" alt="" className="w-44 rounded" />
+              <div className="pl-5">
+                <h2 className="text-3xl">Aiāna Restaurant Collective</h2>
+                <div className="flex items-start">
+                  <div className="flex mb-2">*****</div>
+                  <p className="ml-2 text-sm">Awesome</p>
+                </div>
+                <div className="mb-9">
+                  <div className="font-light flex text-reg">
+                    <p className="mr-4">$$$</p>
+                    <p className="mr-4">Mexican</p>
+                    <p className="mr-4">Ottawa</p>
+                  </div>
+                </div>
+                <div className="text-red-600">
+                  <a href="">View more information</a>
+                </div>
+              </div>
+            </div>
+            {/* RESTAURANT CARD */}
+          </div>
+        </div>
+      </main>
+    </main>
+  );
+}
