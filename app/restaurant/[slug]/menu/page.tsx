@@ -1,5 +1,6 @@
 import NavBar from '../../../components/NavBar';
 import Header from '../components/Header';
+import RestaurantNavBar from '../components/RestaurantNavBar';
 
 export default function RestaurantMenu() {
   return (
@@ -7,15 +8,9 @@ export default function RestaurantMenu() {
       <main className="max-w-screen-2xl m-auto bg-white">
         <NavBar />
         <Header />
-        {/* MAIN SECTION */}
         <div className="flex m-auto w-2/3 justify-between items-start -mt-11">
           <div className="bg-white w-[100%] rounded p-3 shadow">
-            {/* RESTAURANT NAVBAR */}
-            <nav className="flex text-reg border-b pb-2">
-              <a href="" className="mr-7">Overview</a>
-              <a href="" className="mr-7">Menu</a>
-            </nav>
-            {/* RESTAURANT NAVBAR */}
+            <RestaurantNavBar />
             {/* MENU */}
             <main className="bg-white mt-5">
               <div>
@@ -36,7 +31,6 @@ export default function RestaurantMenu() {
             {/* MENU */}
           </div>
         </div>
-        {/* MAIN SECTION */}
       </main>
     </main>
   );
