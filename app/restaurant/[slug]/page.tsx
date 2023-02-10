@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar';
 import Header from './components/Header';
 import RestaurantNavBar from './components/RestaurantNavBar';
+import Title from './components/Title';
 
 export default function RestaurantDetails() {
   return (
@@ -12,11 +13,7 @@ export default function RestaurantDetails() {
         <div className="flex m-auto w-2/3 justify-between items-start -mt-11">
           <div className="bg-white w-[70%] rounded p-3 shadow">
             <RestaurantNavBar />
-            {/* TITLE */}
-            <div className="mt-4 border-b pb-6">
-              <h1 className="font-bold text-6xl">Milestones Grill</h1>
-            </div>
-            {/* TITLE */}
+            <Title />
             {/* RATING */}
             <div className="flex items-end">
               <div className="ratings mt-2 flex items-center">
