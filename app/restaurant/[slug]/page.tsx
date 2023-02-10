@@ -1,5 +1,6 @@
 import NavBar from '../../components/NavBar';
 import Header from './components/Header';
+import Rating from './components/Rating';
 import RestaurantNavBar from './components/RestaurantNavBar';
 import Title from './components/Title';
 
@@ -14,17 +15,7 @@ export default function RestaurantDetails() {
           <div className="bg-white w-[70%] rounded p-3 shadow">
             <RestaurantNavBar />
             <Title />
-            {/* RATING */}
-            <div className="flex items-end">
-              <div className="ratings mt-2 flex items-center">
-                <p>*****</p>
-                <p className="text-reg ml-3">4.9</p>
-              </div>
-              <div>
-                <p className="text-reg ml-4">600 Reviews</p>
-              </div>
-            </div>
-            {/* RATING */}
+            <Rating />
             {/* DESCRIPTION */}
             <div className="mt-4">
               <p className="text-lg font-light">
