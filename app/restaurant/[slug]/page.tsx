@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar';
 import Description from './components/Description';
 import Header from './components/Header';
+import Images from './components/Images';
 import Rating from './components/Rating';
 import RestaurantNavBar from './components/RestaurantNavBar';
 import Title from './components/Title';
@@ -18,40 +19,7 @@ export default function RestaurantDetails() {
             <Title />
             <Rating />
             <Description />
-            {/* IMAGES */}
-            <div>
-              <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
-                5 photos
-              </h1>
-              <div className="flex flex-wrap">
-                <img
-                  src="https://resizer.otstatic.com/v2/photos/xlarge/3/41701449.jpg"
-                  alt=""
-                  className="w-56 h-44 mr-1 mb-1"
-                />
-                <img
-                  src="https://resizer.otstatic.com/v2/photos/xlarge/2/41701450.jpg"
-                  alt=""
-                  className="w-56 h-44 mr-1 mb-1"
-                />
-                <img
-                  src="https://resizer.otstatic.com/v2/photos/xlarge/2/41701452.jpg"
-                  alt=""
-                  className="w-56 h-44 mr-1 mb-1"
-                />
-                <img
-                  src="https://resizer.otstatic.com/v2/photos/xlarge/2/41701453.jpg"
-                  alt=""
-                  className="w-56 h-44 mr-1 mb-1"
-                />
-                <img
-                  src="https://resizer.otstatic.com/v2/photos/xlarge/2/41701454.jpg"
-                  alt=""
-                  className="w-56 h-44 mr-1 mb-1"
-                />
-              </div>
-            </div>
-            {/* IMAGES */}
+            <Images />
             {/* REVIEWS */}
             <div>
               <h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
