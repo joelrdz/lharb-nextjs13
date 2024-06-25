@@ -5,7 +5,16 @@ import RestaurantCard from './components/RestaurantCard';
 const prisma = new PrismaClient();
 
 const fetchRestaurants = async () => {
-  const restaurants = await prisma.restaurant.findMany();
+  const restaurants = await prisma.restaurant.findMany({
+    select: {
+      id: true,
+      name: true,
+      main_image: true,
+      cuisine: true,
+      location: true,
+      price: true,
+    }
+  });
 
   return restaurants;
 }
