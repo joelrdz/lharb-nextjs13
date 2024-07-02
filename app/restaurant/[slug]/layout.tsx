@@ -4,8 +4,8 @@ export default function RestaurantLayout({
   children,
   params,
 }: {
-  children: React.ReactNode,
-  params: { slug: string },
+  children: React.ReactNode;
+  params: { slug: string };
 }) {
   return (
     <main>
